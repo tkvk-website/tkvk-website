@@ -1,16 +1,22 @@
-## Hi there 👋
+# tkvk.in
 
-<!--
-**tkvk-website/tkvk-website** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Website for **TKVK — Taj Kaushal Vikas Kendra**, New Delhi.
+Skill training, trade testing, document and PoE guidance, and Gulf placement support
+for Indian workers, alongside Taj HR Services.
 
-Here are some ideas to get you started:
+Government of India recruitment licence: B-3252/DEL/PER/1000+/5/11251/2025
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Hosting
+
+Static site on GitHub Pages, served from the `main` branch, root folder.
+Custom domain is set in `CNAME` (tkvk.in).
+
+## Files
+
+- `index.html` — homepage
+- `assets/tkvk-logo.svg` — logo wordmark, also used as favicon and social image
+- `robots.txt`, `sitemap.xml`, `llms.txt` — crawling and AI-search files
+
+## Scope
+
+Gulf countries only: Saudi Arabia, UAE, Oman, Qatar, Kuwait, Bahrain.
