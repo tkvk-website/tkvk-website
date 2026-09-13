@@ -186,3 +186,18 @@ footer a:hover{color:var(--leaf)}
 .form-error{color:#9B1C1C;font-size:.92rem;margin-top:12px;min-height:1.2em}
 @media (max-width:880px){.field-row{grid-template-columns:1fr}}
 .form-ok{color:var(--brand);font-size:.95rem;margin-top:10px;min-height:1.2em}
+
+/* Inline enquiry block inside the dark contact section */
+.enq{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);padding:28px 26px;margin-top:26px;max-width:780px}
+.enq h3{color:#fff;margin-bottom:.2em}
+.enq .enq-lead{color:#C3D8C6;font-size:.97rem;margin-bottom:22px}
+.enq label{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf);margin-bottom:6px}
+.enq input,.enq select,.enq textarea{width:100%;font-family:var(--sans);font-size:.97rem;color:var(--ink);background:#fff;border:1px solid rgba(255,255,255,.3);border-radius:2px;padding:11px 13px}
+.enq textarea{min-height:80px;resize:vertical}
+.enq input:focus,.enq select:focus,.enq textarea:focus{outline:none;box-shadow:0 0 0 3px rgba(138,207,149,.45)}
+.enq .enq-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.enq .enq-field{margin-bottom:16px}
+.enq .enq-actions{margin-top:8px}
+.enq .enq-err{color:#FFC9C9;font-size:.9rem;margin-top:12px;min-height:1.1em}
+.enq .enq-hide{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+@media (max-width:880px){.enq .enq-row{grid-template-columns:1fr}}
