@@ -1,0 +1,24 @@
+/* Arabic / RTL */
+:root{
+  --serif:'Amiri',Georgia,serif;
+  --sans:'Noto Sans Arabic',system-ui,sans-serif;
+}
+body{font-size:17.5px;line-height:1.9}
+h1{font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.35}
+h2{font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.4}
+h3{line-height:1.5}
+.brand b{letter-spacing:.07em}
+.brand span{font-size:.68rem;letter-spacing:.06em}
+.orn{flex-direction:row}
+.lic{border-left:0;border-right:0}
+.trades li{border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.steps li{grid-template-columns:72px 1fr}
+.countries h3 em{letter-spacing:.06em}
+.wa-stack{right:auto;left:18px;align-items:flex-start}
+.wa-btn b{right:auto;left:68px;transform:translate(-6px,-50%)}
+.wa-btn b::after{right:auto;left:-5px;border-left-color:transparent;border-right-color:#0C1A0D;border-left:0;border-right:5px solid #0C1A0D}
+.wa-btn:hover b,.wa-btn:focus-visible b{transform:translate(0,-50%)}
+.hero::after{right:auto;left:-130px}
+@media (max-width:880px){.hero::after{right:auto;left:-150px}}
+.lang-link{font-family:'Mukta',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--brand);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 15px}
+.lang-link:hover{border-color:var(--brand)}
