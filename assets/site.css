@@ -185,3 +185,4 @@ footer a:hover{color:var(--leaf)}
 .form-note{border-left:3px solid var(--brand);background:var(--wash);padding:14px 18px;font-size:.94rem;color:var(--muted);margin-top:26px}
 .form-error{color:#9B1C1C;font-size:.92rem;margin-top:12px;min-height:1.2em}
 @media (max-width:880px){.field-row{grid-template-columns:1fr}}
+.form-ok{color:var(--brand);font-size:.95rem;margin-top:10px;min-height:1.2em}

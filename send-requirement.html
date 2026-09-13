@@ -224,13 +224,15 @@
         <textarea id="notes" placeholder="Codes or standards on the project, whether you want to run your own trade test, visa categories you already hold, and anything you have been let down on before."></textarea>
       </div>
 
+      <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="form-actions">
-        <button class="btn btn-solid" type="button" id="send-mail">Send by email</button>
-        <button class="btn btn-wa" type="button" id="send-wa">Send on WhatsApp</button>
+        <button class="btn btn-solid" type="button" id="send-form">Send requirement</button>
+        <button class="btn btn-wa" type="button" id="send-wa">Send on WhatsApp instead</button>
       </div>
       <p class="form-error" id="err" role="alert"></p>
+      <p class="form-ok" id="ok" role="status"></p>
 
-      <p class="form-note">This page does not send anything by itself and keeps no copy. Pressing a button opens your own mail app or WhatsApp with the message already written, so you can read it before it goes. It reaches <a href="mailto:info@tkvk.in">info@tkvk.in</a> or <a href="tel:+919651332002">+91 96513 32002</a> and nowhere else.</p>
+      <p class="form-note">This form sends straight to <a href="mailto:info@tkvk.in">info@tkvk.in</a> through our own server. No third-party form service handles your details, and nothing is stored on this website. If you would rather talk first, call <a href="tel:+919651332002">+91 96513 32002</a>.</p>
     </div>
   </div>
 </section>
@@ -324,52 +326,99 @@ t.addEventListener('click', function(){
 
 <script>
 (function(){
+  var ENDPOINT = 'https://kqshq7av3fcmcdf7wf7vy6ztji0vesax.lambda-url.ap-south-1.on.aws/';
   function v(id){ var e = document.getElementById(id); return e ? e.value.trim() : ''; }
-  function build(){
-    var rows = [
-      ['Company', v('company')],
-      ['Contact person', v('person')],
-      ['Country', v('country')],
-      ['City / site', v('city')],
-      ['Trade needed', v('trade')],
-      ['Number of workers', v('count')],
-      ['Salary and hours', v('salary')],
-      ['Accommodation and food', v('provided')],
-      ['Needed on site by', v('startdate')],
-      ['Contract length', v('contract')],
-      ['Email', v('email')],
-      ['Phone / WhatsApp', v('phone')]
-    ];
+  var LABELS = [
+    ['company','Company'],
+    ['person','Contact person'],
+    ['country','Country'],
+    ['city','City / site'],
+    ['trade','Trade needed'],
+    ['count','Number of workers'],
+    ['salary','Salary and hours'],
+    ['provided','Accommodation and food'],
+    ['startdate','Needed on site by'],
+    ['contract','Contract length'],
+    ['email','Email'],
+    ['phone','Phone / WhatsApp']
+  ];
+  function summary(){
     var lines = [];
-    for (var i = 0; i < rows.length; i++){
-      if (rows[i][1]) lines.push(rows[i][0] + ': ' + rows[i][1]);
+    for (var i = 0; i < LABELS.length; i++){
+      var val = v(LABELS[i][0]);
+      if (val) lines.push(LABELS[i][1] + ': ' + val);
     }
     if (v('notes')) lines.push('', 'Notes:', v('notes'));
     return lines.join('\n');
   }
   function check(){
     var err = document.getElementById('err');
+    document.getElementById('ok').textContent = '';
     if (!v('country') || !v('trade')){
       err.textContent = 'Please give at least the country and the trade you need.';
       return false;
     }
-    if (!v('email') && !v('phone')){
-      err.textContent = 'Please leave an email or a phone number so we can reply.';
+    if (!v('email')){
+      err.textContent = 'Please leave an email address so we can reply with our terms.';
       return false;
     }
     err.textContent = '';
     return true;
   }
-  var m = document.getElementById('send-mail');
-  if (m) m.addEventListener('click', function(){
+  var btn = document.getElementById('send-form');
+  if (btn) btn.addEventListener('click', async function(){
     if (!check()) return;
-    var subject = 'Manpower requirement' + (v('country') ? ' \u2014 ' + v('country') : '') + (v('trade') ? ' \u2014 ' + v('trade') : '');
-    window.location.href = 'mailto:info@tkvk.in?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(build());
+    var err = document.getElementById('err');
+    var ok = document.getElementById('ok');
+    btn.disabled = true;
+    var label = btn.textContent;
+    btn.textContent = 'Sending...';
+    var payload = {
+      _honey: v('_honey'),
+      _subject: 'TKVK manpower requirement' + (v('country') ? ' \u2014 ' + v('country') : '') + (v('trade') ? ' \u2014 ' + v('trade') : ''),
+      name: v('person') || v('company') || 'Employer enquiry',
+      email: v('email'),
+      phone: v('phone'),
+      company: v('company'),
+      country: v('country'),
+      city: v('city'),
+      trade: v('trade'),
+      workers: v('count'),
+      salary: v('salary'),
+      accommodation: v('provided'),
+      start_date: v('startdate'),
+      contract_length: v('contract'),
+      source: 'tkvk.in/send-requirement',
+      message: summary()
+    };
+    try {
+      var res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      var data = await res.json().catch(function(){ return {}; });
+      if (res.ok && data.ok !== false){
+        document.querySelector('.form-wrap').innerHTML =
+          '<h3>Thank you \u2014 your requirement has reached us.</h3>' +
+          '<p>We read every enquiry ourselves. You will get a straight answer on whether we can serve it, ' +
+          'and our terms in writing, at ' + v('email').replace(/</g,'&lt;') + '.</p>' +
+          '<p>If it is urgent, call <a href="tel:+919651332002">+91 96513 32002</a>.</p>';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        err.textContent = (data && data.error) ? data.error :
+          'Could not send that just now. Please use the WhatsApp button, or email info@tkvk.in directly.';
+        btn.disabled = false; btn.textContent = label;
+      }
+    } catch (e) {
+      err.textContent = 'Could not reach our server. Please use the WhatsApp button, or email info@tkvk.in directly.';
+      btn.disabled = false; btn.textContent = label;
+    }
   });
   var w = document.getElementById('send-wa');
   if (w) w.addEventListener('click', function(){
     if (!check()) return;
-    window.location.href = 'https://wa.me/919651332002?text=' + encodeURIComponent('Manpower requirement\n\n' + build());
+    window.location.href = 'https://wa.me/919651332002?text=' + encodeURIComponent('Manpower requirement\n\n' + summary());
   });
 })();
 </script>
