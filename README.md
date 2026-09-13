@@ -4,7 +4,8 @@ Website for **TKVK — Taj Kaushal Vikas Kendra**, New Delhi.
 Skill training, trade testing, document and PoE guidance, and Gulf placement support
 for Indian workers, alongside Taj HR Services.
 
-Government of India recruitment licence: B-3252/DEL/PER/1000+/5/11251/2025
+Recruitment and deployment is carried out by Taj HR Services,
+holder of Government of India recruitment licence B-3252/DEL/PER/1000+/5/11251/2025.
 
 ## Hosting
 

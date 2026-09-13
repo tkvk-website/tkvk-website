@@ -27,167 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --brand:#0B6A10;
-  --brand-deep:#053B06;
-  --brand-mid:#12801A;
-  --leaf:#8ACF95;
-  --charcoal:#444444;
-  --ink:#23282B;
-  --muted:#5C6660;
-  --line:#DCE4DD;
-  --paper:#FFFFFF;
-  --wash:#F3F7F3;
-  --max:1140px;
-  --serif:'Tiro Devanagari Hindi',Georgia,'Times New Roman',serif;
-  --sans:'Mukta',system-ui,-apple-system,"Segoe UI",sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--paper);color:var(--ink);
-  font-family:var(--sans);font-size:17px;line-height:1.66;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:0}
-h1{font-size:clamp(2.15rem,4.6vw,3.4rem);line-height:1.18;margin:0 0 .5em}
-h2{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.22;margin:0 0 .55em}
-h3{font-size:1.28rem;line-height:1.3;margin:0 0 .35em}
-p{margin:0 0 1.1em;max-width:66ch}
-a{color:var(--brand)}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-section{padding:78px 0}
-
-/* Leaf ornament, taken from the logo */
-.orn{display:flex;align-items:center;gap:12px;margin:0 0 22px}
-.orn svg{width:30px;height:21px;fill:var(--brand);flex:none;display:block}
-.orn i{display:block;height:1px;width:74px;background:var(--brand);opacity:.45}
-
-/* Header */
-.site-head{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.head-in{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 22px;max-width:var(--max);margin:0 auto}
-.brand{display:block;text-decoration:none;line-height:1;padding:4px 0}
-.brand b{font-family:var(--serif);font-size:1.85rem;font-weight:700;display:block;line-height:1;color:var(--brand);letter-spacing:.07em}
-.brand span{font-family:var(--sans);font-size:.63rem;font-weight:600;color:var(--charcoal);letter-spacing:.2em;display:block;line-height:1.4;margin-top:5px;padding-top:5px;border-top:1px solid rgba(11,106,16,.35)}
-.nav{display:flex;gap:25px;align-items:center}
-.nav a{color:var(--charcoal);text-decoration:none;font-size:1rem;font-weight:500;letter-spacing:.02em}
-.nav a:hover,.nav a:focus-visible{color:var(--brand)}
-.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:50%;width:42px;height:42px;place-items:center;cursor:pointer;color:var(--brand)}
-.nav-toggle svg{display:block}
-
-/* Buttons */
-.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:999px;font-family:var(--sans);font-size:1rem;font-weight:600;letter-spacing:.03em;text-decoration:none;border:1.5px solid transparent;transition:background .18s ease,color .18s ease,border-color .18s ease}
-.btn-solid{background:var(--leaf);color:var(--brand-deep)}
-.btn-solid:hover,.btn-solid:focus-visible{background:#A9DDB1}
-.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
-.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--leaf);color:var(--leaf)}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--brand-mid);outline-offset:3px}
-
-/* Hero — the logo's ring, drawn large */
-.hero{position:relative;overflow:hidden;background:linear-gradient(158deg,var(--brand-deep) 0%,#07540C 58%,var(--brand) 100%);color:#E9F3EA;padding:86px 0 0}
-.hero::after{content:"";position:absolute;right:-130px;top:-90px;width:560px;height:560px;border-radius:50%;border:1.5px solid rgba(138,207,149,.28);pointer-events:none}
-.hero .wrap{position:relative;z-index:1}
-.hero h1{color:#fff}
-.hero .lede{font-size:1.18rem;color:#C3DCC6;max-width:56ch}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.hero-strip{margin-top:64px;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:repeat(4,1fr)}
-.hero-strip div{padding:20px 18px;border-right:1px solid rgba(255,255,255,.18)}
-.hero-strip div:last-child{border-right:0}
-.hero-strip b{font-family:var(--serif);font-weight:400;font-size:1.16rem;color:var(--leaf);display:block;margin-bottom:2px}
-.hero-strip small{color:#A9C4AC;font-size:.92rem}
-
-/* Cards */
-.grid{display:grid;gap:22px}
-.g2{grid-template-columns:repeat(2,1fr)}
-.g3{grid-template-columns:repeat(3,1fr)}
-.card{border:1px solid var(--line);padding:28px 26px;background:#fff}
-.card p{font-size:.98rem;color:var(--muted);margin-bottom:0}
-.icon{width:52px;height:52px;border:1.5px solid var(--brand);border-radius:50%;display:grid;place-items:center;color:var(--brand);margin-bottom:18px}
-.icon svg{width:24px;height:24px;display:block}
-
-/* Trades */
-.wash{background:var(--wash)}
-.trades{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;padding:0;list-style:none}
-.trades li{border:1px solid var(--line);background:#fff;padding:8px 18px;font-size:.96rem;border-radius:999px}
-
-/* Countries */
-.countries{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.countries li{background:#fff;padding:26px 24px}
-.countries h3{margin-bottom:.3em;display:flex;align-items:baseline;gap:10px;color:var(--brand-deep)}
-.countries h3 em{font-family:var(--sans);font-style:normal;font-size:.68rem;font-weight:600;color:var(--charcoal);letter-spacing:.2em}
-.countries p{font-size:.96rem;color:var(--muted);margin:0}
-
-/* Steps — numerals set in the logo's circle */
-.steps{counter-reset:s;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;display:grid;grid-template-columns:72px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--line)}
-.steps li:last-child{border-bottom:0}
-.steps li::before{content:counter(s);font-family:var(--serif);font-size:1.3rem;color:var(--brand);width:50px;height:50px;border:1.5px solid var(--brand);border-radius:50%;display:grid;place-items:center}
-.steps h3{margin-bottom:.25em}
-.steps p{margin:0;color:var(--muted);font-size:1rem}
-
-/* FAQ */
-details{border-bottom:1px solid var(--line);padding:18px 0}
-summary{cursor:pointer;font-family:var(--serif);font-size:1.2rem;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary .chev{width:17px;height:17px;flex:none;color:var(--brand);transition:transform .2s ease}
-details[open] summary .chev{transform:rotate(180deg)}
-details p{margin:12px 0 2px;color:var(--muted)}
-
-/* Notice for unverified content */
-.todo{background:#FFF6E0;border-left:4px solid #C8A03C;padding:14px 18px;font-size:.94rem;color:#6B551E;margin:0 0 22px}
-
-/* Licence line */
-.lic{border:1px solid var(--line);background:var(--wash);padding:20px 24px;font-size:.97rem;color:var(--ink);max-width:660px;display:flex;gap:18px;align-items:flex-start}
-.lic .seal{width:46px;height:46px;border:1.5px solid var(--brand);border-radius:50%;display:grid;place-items:center;flex:none;color:var(--brand)}
-.lic .seal svg{width:22px;height:22px}
-.lic b{display:block;font-family:var(--serif);font-weight:400;font-size:1.1rem;color:var(--brand-deep);margin-bottom:3px}
-
-/* Contact */
-.contact{background:var(--brand-deep);color:#E5F0E7}
-.contact h2{color:#fff}
-.contact a{color:var(--leaf)}
-.contact .orn svg{fill:var(--leaf)}
-.contact .orn i{background:var(--leaf)}
-.contact .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
-.contact .card p{color:#C3D8C6}
-.contact .icon{color:var(--leaf);border-color:rgba(138,207,149,.6)}
-
-/* Footer */
-footer{background:#042E05;color:#A6BFA9;font-size:.94rem;padding:42px 0 30px}
-footer a{color:#CFE2D2;text-decoration:none}
-.foot-logo{width:210px;height:auto;display:block;margin-bottom:16px;background:#fff;padding:16px 18px;border-radius:2px}
-footer a:hover{color:var(--leaf)}
-.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px;margin-bottom:28px}
-.foot-grid h3{color:#fff;font-size:1.12rem}
-.foot-grid ul{list-style:none;padding:0;margin:0}
-.foot-grid li{margin-bottom:8px}
-.foot-base{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
-
-/* WhatsApp */
-.wa{position:fixed;right:18px;bottom:18px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.wa svg{width:30px;height:30px;fill:#fff}
-
-@media (max-width:880px){
-  .g3,.g2,.foot-grid,.countries{grid-template-columns:1fr}
-  .hero::after{width:360px;height:360px;right:-150px;top:-120px}
-  .hero-strip{grid-template-columns:repeat(2,1fr)}
-  .hero-strip div:nth-child(2){border-right:0}
-  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0;padding:8px 22px 16px}
-  .nav.open{display:flex}
-  .nav a{padding:12px 0;width:100%;border-bottom:1px solid var(--line)}
-  .nav-toggle{display:grid}
-  .site-head{position:relative}
-  .brand b{font-size:1.6rem}
-  .brand span{font-size:.58rem;letter-spacing:.16em}
-  .steps li{grid-template-columns:60px 1fr;gap:16px}
-  .lic{flex-direction:column;gap:12px}
-}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *{transition:none !important;animation:none !important}
-}
-</style>
+<link rel="stylesheet" href="/assets/site.css">
 
 <script type="application/ld+json">
 {
@@ -240,7 +80,7 @@ footer a:hover{color:var(--leaf)}
   <div class="wrap">
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h1>Terms of use</h1>
-    <p>These terms cover your use of this website and the services described on it. TKVK — Taj Kaushal Vikas Kendra operates under Government of India recruitment licence B-3252/DEL/PER/1000+/5/11251/2025.</p>
+    <p>These terms cover your use of this website and the services described on it. TKVK — Taj Kaushal Vikas Kendra provides training, trade testing and pre-departure support. Overseas recruitment and deployment is carried out by Taj HR Services, which holds Government of India recruitment licence B-3252/DEL/PER/1000+/5/11251/2025.</p>
 
     <h2>No promise of a job</h2>
     <p>Nothing on this site is an offer of employment. Whether you are selected is the employer's decision, and whether a visa is granted is the decision of that country's authorities. We prepare you, present you, and tell you honestly where you stand — we cannot guarantee an outcome, and you should not trust anyone who does.</p>
@@ -305,9 +145,14 @@ footer a:hover{color:var(--leaf)}
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/919651332002?text=Namaste%2C%20main%20TKVK%20ki%20website%20se%20baat%20kar%20raha%20hoon.%20Mera%20trade%20hai%3A%20" aria-label="Chat on WhatsApp" rel="noopener">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
-</a>
+<div class="wa-stack">
+  <a class="wa-btn wa-channel" href="https://whatsapp.com/channel/0029VbDjPQVBadmUfxurrK1O" target="_blank" rel="noopener" aria-label="Follow our Gulf jobs channel on WhatsApp">
+    <b>Gulf jobs channel</b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+  </a>
+  <a class="wa-btn wa-chat" href="https://wa.me/919651332002?text=Namaste%2C%20main%20TKVK%20ki%20website%20se%20baat%20kar%20raha%20hoon.%20Mera%20trade%20hai%3A%20" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+    <b>Message us</b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+  </a>
+</div>
 
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
