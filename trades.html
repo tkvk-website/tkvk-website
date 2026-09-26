@@ -304,12 +304,12 @@
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true"><path d="M0 1h22M0 8h22M0 15h22" stroke="currentColor" stroke-width="2"/></svg>
     </button>
     <nav class="nav" id="nav">
+      <a href="/about">About</a>
       <a href="/#testing">Trade testing</a>
       <a href="/#trades">Trades</a>
       <a href="/#countries">Countries</a>
       <a href="/#process">Process</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contact">Contact</a>
+      <a href="/contact">Contact</a>
       <a href="/send-requirement">Send requirement</a>
       <a class="lang-link" href="/ar/">العربية</a>
     </nav>
@@ -430,7 +430,53 @@
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h2>Trade not on the list?</h2>
     <p style="color:#C3D8C6">Ask. We will tell you honestly whether we can test for it properly, and we will say no rather than send you someone untested.</p>
-  </div>
+      <div class="enq" data-enquiry>
+      <h3>Send your requirement</h3>
+      <p class="enq-lead">Trade, numbers and terms. It reaches info@tkvk.in directly &mdash; no third-party form service, nothing stored on this website.</p>
+      <div class="enq-row">
+        <div class="enq-field">
+          <label for="enq-company">Company</label>
+          <input id="enq-company" data-f="company" type="text" autocomplete="organization">
+        </div>
+        <div class="enq-field">
+          <label for="enq-country">Country of work</label>
+          <select id="enq-country" data-f="country">
+            <option value="">Select a country</option>
+            <option>Saudi Arabia</option><option>United Arab Emirates</option><option>Oman</option><option>Qatar</option><option>Kuwait</option><option>Bahrain</option>
+          </select>
+        </div>
+      </div>
+      <div class="enq-row">
+        <div class="enq-field">
+          <label for="enq-trade">Trade needed</label>
+          <input id="enq-trade" data-f="trade" type="text" placeholder="e.g. 6G pipe welders">
+        </div>
+        <div class="enq-field">
+          <label for="enq-workers">How many workers</label>
+          <input id="enq-workers" data-f="workers" type="text" inputmode="numeric" placeholder="e.g. 25">
+        </div>
+      </div>
+      <div class="enq-row">
+        <div class="enq-field">
+          <label for="enq-email">Your email</label>
+          <input id="enq-email" data-f="email" type="email" autocomplete="email" placeholder="name@company.com">
+        </div>
+        <div class="enq-field">
+          <label for="enq-phone">Phone or WhatsApp</label>
+          <input id="enq-phone" data-f="phone" type="tel" autocomplete="tel" placeholder="with country code">
+        </div>
+      </div>
+      <div class="enq-field">
+        <label for="enq-notes">Salary, terms, start date, anything else</label>
+        <textarea id="enq-notes" data-f="notes"></textarea>
+      </div>
+      <input class="enq-hide" data-f="honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="enq-actions">
+        <button class="btn btn-solid" type="button" data-send>Send requirement</button>
+      </div>
+      <p class="enq-err" data-err role="alert"></p>
+    </div>
+</div>
 </section>
 
 </main>
@@ -446,6 +492,8 @@
       <div>
         <h3>Pages</h3>
         <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li><a href="/#testing">Trade testing</a></li>
           <li><a href="/#trades">Trades</a></li>
           <li><a href="/#countries">Countries</a></li>
@@ -482,6 +530,7 @@ t.addEventListener('click', function(){
   t.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 </script>
+<script src="/assets/enquiry.js" defer></script>
 <script src="/assets/enquiry.js" defer></script>
 </body>
 </html>
