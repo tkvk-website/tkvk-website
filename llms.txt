@@ -40,7 +40,9 @@ New Friends Colony, New Delhi 110025
 - https://tkvk.in/ — homepage
 - https://tkvk.in/about — about TKVK, centres in New Delhi and Lucknow
 - https://tkvk.in/contact — contact details and what to send with a requirement
-- https://tkvk.in/trades — index of all 36 country+trade pages
+- https://tkvk.in/trades — index of all country+trade pages
+- https://tkvk.in/trade-testing — what the practical trade test actually covers
+- https://tkvk.in/employer-documents — demand letter, power of attorney, job order, attestation
 - https://tkvk.in/send-requirement — employer requirement form
 - https://tkvk.in/ar/ — full Arabic (RTL) version: homepage, 6 country pages and 36 country+trade pages
 - https://tkvk.in/privacy-policy — privacy policy
