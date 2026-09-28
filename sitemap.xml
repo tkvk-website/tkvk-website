@@ -133,6 +133,18 @@
     <lastmod>2026-09-26</lastmod><priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tkvk.in/process</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/process"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/process"/>
+    <lastmod>2026-09-28</lastmod><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tkvk.in/ar/process</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/process"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/process"/>
+    <lastmod>2026-09-28</lastmod><priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tkvk.in/employer-documents</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/employer-documents"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/employer-documents"/>
@@ -637,6 +649,28 @@
     <lastmod>2026-09-26</lastmod><priority>0.8</priority>
   </url>
   <url><loc>https://tkvk.in/send-requirement</loc><lastmod>2026-09-26</lastmod><priority>0.9</priority></url>
-  <url><loc>https://tkvk.in/privacy-policy</loc><lastmod>2026-09-26</lastmod><priority>0.3</priority></url>
-  <url><loc>https://tkvk.in/terms-of-service</loc><lastmod>2026-09-26</lastmod><priority>0.3</priority></url>
+  <url>
+    <loc>https://tkvk.in/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/privacy-policy"/>
+    <lastmod>2026-09-28</lastmod><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tkvk.in/ar/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/privacy-policy"/>
+    <lastmod>2026-09-28</lastmod><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tkvk.in/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/terms-of-service"/>
+    <lastmod>2026-09-28</lastmod><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tkvk.in/ar/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tkvk.in/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tkvk.in/ar/terms-of-service"/>
+    <lastmod>2026-09-28</lastmod><priority>0.3</priority>
+  </url>
 </urlset>
