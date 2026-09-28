@@ -199,5 +199,5 @@ footer a:hover{color:var(--leaf)}
 .enq .enq-field{margin-bottom:16px}
 .enq .enq-actions{margin-top:8px}
 .enq .enq-err{color:#FFC9C9;font-size:.9rem;margin-top:12px;min-height:1.1em}
-.enq .enq-hide{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.enq .enq-hide{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0}
 @media (max-width:880px){.enq .enq-row{grid-template-columns:1fr}}
