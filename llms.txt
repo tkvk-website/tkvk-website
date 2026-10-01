@@ -1,49 +1,117 @@
 # TKVK — Taj Kaushal Vikas Kendra
 
-> Skill training, trade testing, document and PoE guidance, and Gulf placement support
-> for Indian workers. Based in New Friends Colony, New Delhi.
+> Skill training and practical trade testing of Indian workers for employers in the six
+> GCC countries. Based in New Friends Colony, New Delhi, India.
+> Last reviewed: 2026-10-01
 
-TKVK provides training, trade testing and pre-departure support.
-It is not itself the licensed recruiting agent: overseas recruitment and deployment
-is carried out by Taj HR Services, holder of Government of India recruitment
-licence B-3252/DEL/PER/1000+/5/11251/2025.
+## What TKVK is
 
-## Scope
+TKVK (Taj Kaushal Vikas Kendra) is an Indian skill-training and trade-testing organisation.
+It trains Indian tradesmen and tests them practically before they are presented to a Gulf employer.
 
-Gulf countries only — Saudi Arabia, United Arab Emirates, Oman, Qatar, Kuwait, Bahrain.
-No Europe, Canada, Malaysia or other destinations.
+TKVK is not itself the licensed recruiting agent. Overseas recruitment and deployment are
+carried out by **Taj HR Services**, which holds Government of India recruitment licence
+**B-3252/DEL/PER/1000+/5/11251/2025**, issued by the Ministry of External Affairs.
+Taj HR Services website: https://tajhrservices.com/
 
-## What TKVK does
+Stating it plainly, so the two are not confused:
+- TKVK does the training, the practical trade test and the document/PoE preparation.
+- Taj HR Services holds the licence and carries out the recruitment and deployment.
 
-- Hands-on skill training in the worker's own trade
-- Practice trade tests run the way a Gulf employer runs them
-- Documents: passport and ECR status, GAMCA/Wafid medical, police clearance,
-  certificate attestation, eMigrate PoE clearance
-- Pre-departure briefing on contract terms and worker rights
-- Placement through Taj HR Services' employer mandates
+## Who TKVK serves
 
-## Trades
+Employers in the GCC: contractors, facility-management companies, industrial and
+manufacturing firms, logistics and warehousing operators, hotels and retail groups,
+and households hiring domestic staff. The site is written for employers, not job seekers.
 
-Welder, electrician, pipe fitter, steel fixer, mason, scaffolder, HVAC technician,
-heavy equipment operator, driver (light and heavy), hospitality staff, warehouse staff,
-security guard, cleaning and facility staff, delivery rider, retail staff.
+## Where TKVK operates
+
+Six Gulf countries only: Saudi Arabia, the United Arab Emirates, Oman, Qatar, Kuwait, Bahrain.
+No Europe, Canada, Malaysia or any other destination.
+
+## Workforce supplied
+
+TKVK supplies **male workers only**. Where a requirement needs female staff, TKVK says so
+at the outset rather than accepting the order.
+
+## How workers are tested
+
+Candidates are assessed on the actual work, not on a certificate:
+- a practical task in the candidate's own trade, judged by someone who knows that trade
+- evidence (photographs, test results, honest written assessment) sent before the employer interviews
+- the employer may run its own test, in person at the New Delhi centre or by video
+- installation experience and maintenance experience are reported separately
+- what a certificate proves is described exactly; gaps are stated rather than implied
+
+## Documents prepared
+
+Passport and ECR status, approved medical (GAMCA/Wafid), police clearance,
+certificate attestation, and eMigrate PoE clearance. Where a destination has its own
+checkpoint — for example the Qatar Visa Centre — the file is built to clear it first time.
+Local operating licences (for example a Gulf forklift or heavy-equipment licence) are
+issued in the destination country and are arranged by the employer; TKVK states this
+rather than implying it can issue them from India.
+
+## Trades covered
+
+Welders, electricians, pipe fitters, steel fixers, masons, scaffolders, carpenters, plumbers,
+mechanics, HVAC and AC technicians, heavy equipment operators, forklift operators,
+heavy drivers, light drivers, delivery riders, security guards, hospitality staff,
+cleaning and facility staff, warehouse and logistics staff, packing helpers,
+residential building helpers, mall and retail staff, and male household staff
+(cooks, houseboys, family drivers, gardeners).
+
+Coverage varies by country. Each trade page states which country it applies to.
+
+## How an employer starts
+
+Send a requirement with the trade, the number of workers, the salary and terms, and the
+start date. It reaches info@tkvk.in directly — there is no third-party form service and
+nothing is stored on the website.
+
+- Requirement form: https://tkvk.in/send-requirement
+- WhatsApp: +91 96513 32002
+- Email: info@tkvk.in
 
 ## Contact
 
-Phone: +91 96513 32002
+Phone and WhatsApp: +91 96513 32002
 Email: info@tkvk.in
 Office: 18-B, 1st, Money Top, near Honey, Navjivan Buddh Vihar, Taimoor Nagar,
-New Friends Colony, New Delhi 110025
+New Friends Colony, New Delhi 110025, India
 
-## Pages
+## Key pages
 
 - https://tkvk.in/ — homepage
-- https://tkvk.in/about — about TKVK, centres in New Delhi and Lucknow
-- https://tkvk.in/contact — contact details and what to send with a requirement
-- https://tkvk.in/trades — index of all country+trade pages
-- https://tkvk.in/trade-testing — what the practical trade test actually covers
-- https://tkvk.in/employer-documents — demand letter, power of attorney, job order, attestation
+- https://tkvk.in/about — what TKVK is, and how it differs from Taj HR Services
+- https://tkvk.in/trade-testing — how the practical trade test works
+- https://tkvk.in/process — from requirement to workers on site
+- https://tkvk.in/employer-documents — documents an employer needs
+- https://tkvk.in/trades — every trade and country page
 - https://tkvk.in/send-requirement — employer requirement form
-- https://tkvk.in/ar/ — full Arabic (RTL) version: homepage, 6 country pages and 36 country+trade pages
-- https://tkvk.in/privacy-policy — privacy policy
-- https://tkvk.in/terms-of-service — terms of use
+- https://tkvk.in/contact — contact details
+- https://tkvk.in/privacy-policy
+- https://tkvk.in/terms-of-service
+
+## Country pages
+
+- https://tkvk.in/hire-workers-in-saudi-arabia
+- https://tkvk.in/hire-workers-in-uae
+- https://tkvk.in/hire-workers-in-oman
+- https://tkvk.in/hire-workers-in-qatar
+- https://tkvk.in/hire-workers-in-kuwait
+- https://tkvk.in/hire-workers-in-bahrain
+
+## Arabic
+
+Every page has an Arabic counterpart under https://tkvk.in/ar/ , paired with hreflang.
+
+## Sitemap
+
+https://tkvk.in/sitemap.xml
+
+## What TKVK does not claim
+
+No guaranteed deployment timelines, no invented certifications, no fabricated client lists,
+reviews, statistics or awards. Where an answer is "no" or "we do not know yet", the site
+says so. Timelines depend on visa, quota and attestation processes outside TKVK's control.
