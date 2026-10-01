@@ -23,3 +23,5 @@ h3{line-height:1.5}
 @media (max-width:880px){.hero::after{right:auto;left:-150px}}
 .lang-link{font-family:'Mukta',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--brand);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 15px}
 .lang-link:hover{border-color:var(--brand)}
+
+.facts th,.facts td{text-align:right}

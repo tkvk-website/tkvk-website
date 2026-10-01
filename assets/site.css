@@ -201,3 +201,16 @@ footer a:hover{color:var(--leaf)}
 .enq .enq-err{color:#FFC9C9;font-size:.9rem;margin-top:12px;min-height:1.1em}
 .enq .enq-hide{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0}
 @media (max-width:880px){.enq .enq-row{grid-template-columns:1fr}}
+
+/* Citable facts table (about pages) */
+.facts{width:100%;border-collapse:collapse;margin-top:18px;font-size:.97rem}
+.facts th,.facts td{text-align:left;vertical-align:top;padding:14px 16px;border-top:1px solid rgba(11,106,16,.14)}
+.facts tr:first-child th,.facts tr:first-child td{border-top:0}
+.facts th{width:30%;font-weight:600;color:var(--brand-deep);white-space:normal}
+.facts td{color:inherit}
+@media (max-width:640px){
+  .facts,.facts tbody,.facts tr,.facts th,.facts td{display:block;width:auto}
+  .facts th{padding:14px 0 4px;border-top:1px solid rgba(11,106,16,.14)}
+  .facts td{padding:0 0 14px;border-top:0}
+  .facts tr:first-child th{border-top:0}
+}
