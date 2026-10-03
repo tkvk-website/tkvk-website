@@ -240,7 +240,7 @@ footer a:hover{color:var(--leaf)}
   border:1px solid var(--line);background:#fff;padding:32px 34px;margin-top:30px}
 .leader-portrait{width:168px;height:168px;border-radius:50%;overflow:hidden;position:relative;
   border:1.5px solid var(--line);background:var(--wash);display:grid;place-items:center}
-.leader-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.leader-portrait img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;object-position:center top;display:block}
 .leader-monogram{font-family:var(--serif);font-size:3.1rem;line-height:1;color:var(--brand);
   letter-spacing:.06em;user-select:none}
 .leader-body h3{margin:0 0 4px;font-size:1.62rem;color:var(--brand-deep)}
