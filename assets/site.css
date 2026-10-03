@@ -26,7 +26,7 @@ h2{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.22;margin:0 0 .55em}
 h3{font-size:1.28rem;line-height:1.3;margin:0 0 .35em}
 p{margin:0 0 1.1em;max-width:66ch}
 a{color:var(--brand)}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px;overflow-wrap:break-word}
 section{padding:78px 0}
 
 /* Leaf ornament, taken from the logo */
@@ -234,3 +234,24 @@ footer a:hover{color:var(--leaf)}
 
 .foot-base .last-updated{opacity:.72;font-size:.9em}
 .foot-base .last-updated time{font-variant-numeric:tabular-nums}
+
+/* Leadership */
+.leader{display:grid;grid-template-columns:168px 1fr;gap:34px;align-items:start;
+  border:1px solid var(--line);background:#fff;padding:32px 34px;margin-top:30px}
+.leader-portrait{width:168px;height:168px;border-radius:50%;overflow:hidden;position:relative;
+  border:1.5px solid var(--line);background:var(--wash);display:grid;place-items:center}
+.leader-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.leader-monogram{font-family:var(--serif);font-size:3.1rem;line-height:1;color:var(--brand);
+  letter-spacing:.06em;user-select:none}
+.leader-body h3{margin:0 0 4px;font-size:1.62rem;color:var(--brand-deep)}
+.leader-role{font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.19em;
+  text-transform:uppercase;color:var(--brand);margin:0 0 16px}
+.leader-body p{color:var(--muted);margin-bottom:.9em}
+.leader-body p:last-child{margin-bottom:0}
+@media(max-width:720px){
+  .leader{grid-template-columns:1fr;gap:22px;padding:26px 22px;justify-items:center;text-align:center}
+  .leader-body p:not(.leader-role){text-align:start}
+  .leader-portrait{width:136px;height:136px}
+  .leader-monogram{font-size:2.5rem}
+  .leader-body h3{font-size:1.42rem}
+}
