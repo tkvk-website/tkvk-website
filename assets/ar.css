@@ -25,3 +25,7 @@ h3{line-height:1.5}
 .lang-link:hover{border-color:var(--brand)}
 
 .facts th,.facts td{text-align:right}
+
+/* breadcrumb — RTL chevron points the other way */
+.crumbs li+li::before{transform:rotate(-135deg)}
+.crumbs{font-family:var(--sans)}

@@ -214,3 +214,20 @@ footer a:hover{color:var(--leaf)}
   .facts td{padding:0 0 14px;border-top:0}
   .facts tr:first-child th{border-top:0}
 }
+
+/* breadcrumb trail — mirrors the BreadcrumbList schema */
+.crumbs{position:relative;z-index:1;padding:18px 0 0;font-family:var(--sans);font-size:.83rem;letter-spacing:.01em}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:0}
+.crumbs li{display:flex;align-items:center;color:rgba(233,243,234,.72)}
+.crumbs li+li::before{content:"";display:inline-block;width:5px;height:5px;margin:0 10px;border-top:1.5px solid rgba(233,243,234,.45);border-right:1.5px solid rgba(233,243,234,.45);transform:rotate(45deg)}
+.crumbs a{color:rgba(233,243,234,.78);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+.crumbs a:hover,.crumbs a:focus-visible{color:#fff;border-bottom-color:rgba(138,207,149,.7)}
+.crumbs [aria-current="page"]{color:#fff;font-weight:600}
+@media (max-width:620px){.crumbs{font-size:.78rem}.crumbs li+li::before{margin:0 7px}}
+/* breadcrumb on a light background (legal pages) */
+.crumbs--plain{padding:0 0 14px}
+.crumbs--plain li{color:var(--muted,#5a6b5c)}
+.crumbs--plain li+li::before{border-top-color:rgba(0,0,0,.3);border-right-color:rgba(0,0,0,.3)}
+.crumbs--plain a{color:var(--brand)}
+.crumbs--plain a:hover,.crumbs--plain a:focus-visible{color:var(--brand-deep)}
+.crumbs--plain [aria-current="page"]{color:#17301A}
