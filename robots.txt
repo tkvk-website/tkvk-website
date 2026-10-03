@@ -1,6 +1,15 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
@@ -31,7 +40,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Bingbot
-Allow: /
 
 Sitemap: https://tkvk.in/sitemap.xml
