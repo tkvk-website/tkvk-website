@@ -231,3 +231,6 @@ footer a:hover{color:var(--leaf)}
 .crumbs--plain a{color:var(--brand)}
 .crumbs--plain a:hover,.crumbs--plain a:focus-visible{color:var(--brand-deep)}
 .crumbs--plain [aria-current="page"]{color:#17301A}
+
+.foot-base .last-updated{opacity:.72;font-size:.9em}
+.foot-base .last-updated time{font-variant-numeric:tabular-nums}
