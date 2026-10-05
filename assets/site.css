@@ -255,3 +255,7 @@ footer a:hover{color:var(--leaf)}
   .leader-monogram{font-size:2.5rem}
   .leader-body h3{font-size:1.42rem}
 }
+
+/* related-links block on trade pages */
+.rel-h{margin:34px 0 .35em;color:var(--brand-deep)}
+#related .trades{margin-bottom:4px}
