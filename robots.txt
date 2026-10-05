@@ -1,4 +1,11 @@
+# Content Signals Policy — https://contentsignals.org/
+# search=yes      appearing in search results is welcome
+# ai-input=yes    using this page to answer a question, with a citation, is welcome
+# ai-train=no     using this content to train a model is not granted
+# These signals express TKVK's preference. They are not a licence or a contract.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 User-agent: Googlebot
