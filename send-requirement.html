@@ -40,7 +40,7 @@
     {
       "@type": "ContactPage",
       "@id": "https://tkvk.in/send-requirement#webpage",
-      "dateModified": "2026-10-03",
+      "dateModified": "2026-10-16",
       "url": "https://tkvk.in/send-requirement",
       "name": "Send your manpower requirement | TKVK — Taj Kaushal Vikas Kendra",
       "inLanguage": "en-IN",
@@ -150,7 +150,24 @@
   </div>
 </section>
 
-<section>
+<section class="wash" id="ways">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>Choose how to send it</h2>
+    <p>Six routes, all reaching the same desk at info@tkvk.in. Pick whichever matches where you are — you do not need a finished job order to start.</p>
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card"><h3><a href="#full">Send a full requirement</a></h3><p>The complete form: trade, numbers, salary, hours, accommodation, contract length and start date. Use this when you know what you need.</p></div>
+      <div class="card"><h3><a href="#callback">Ask a question or request a call back</a></h3><p>Four fields. For when you are still working out what the requirement is, or want to speak to someone before committing anything to writing.</p></div>
+      <div class="card"><h3><a href="#attach">Email an existing demand letter</a></h3><p>Already have a job order, demand letter or trade specification? Send it as an attachment and we will read it and reply on the detail.</p></div>
+      <div class="card"><h3><a href="#whatsapp">Send it on WhatsApp</a></h3><p>Fastest route. Opens a message already addressed to us — type the trade, the numbers and the country and send.</p></div>
+      <div class="card"><h3><a href="#visit">Book a trade test or a visit</a></h3><p>Watch candidates work before you select, in person at our New Delhi centre or over video. Tell us the trade and we set up the bench.</p></div>
+      <div class="card"><h3><a href="tel:+918887927104">Call us</a></h3><p>+91 88879 27104. If you would rather just talk it through first, call and we will put the details in writing afterwards.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="full">
   <div class="wrap">
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h2>Your manpower requirement</h2>
@@ -237,7 +254,7 @@
         <textarea id="notes" placeholder="Codes or standards on the project, whether you want to run your own trade test, visa categories you already hold, and anything you have been let down on before."></textarea>
       </div>
 
-      <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0">
       <div class="form-actions">
         <button class="btn btn-solid" type="button" id="send-form">Send requirement</button>
         <button class="btn btn-wa" type="button" id="send-wa">Send on WhatsApp instead</button>
@@ -250,7 +267,110 @@
   </div>
 </section>
 
-<section class="wash">
+<section class="wash" id="callback">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>Ask a question or request a call back</h2>
+    <p>No job order needed. Tell us what you are trying to work out and we will answer it — including when the answer is that we cannot help.</p>
+    <div class="form-wrap" style="margin-top:30px">
+      <div class="field-row">
+        <div class="field">
+          <label for="cb-name">Your name</label>
+          <input id="cb-name" type="text">
+        </div>
+        <div class="field">
+          <label for="cb-company">Company</label>
+          <input id="cb-company" type="text">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="cb-phone">Phone or WhatsApp</label>
+          <input id="cb-phone" type="tel" placeholder="with country code">
+        </div>
+        <div class="field">
+          <label for="cb-email">Your email</label>
+          <input id="cb-email" type="email" placeholder="name@company.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="cb-q">What would you like to ask?</label>
+        <textarea id="cb-q" placeholder="e.g. We may need 20 electricians for Dammam in March but the visas are not issued yet — where would we start?"></textarea>
+      </div>
+      <input type="text" id="cb-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0">
+      <div class="form-actions"><button class="btn btn-solid" type="button" id="cb-send">Send the question</button></div>
+      <p class="form-error" id="cb-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>Book a trade test or a visit</h2>
+    <p>This is the part most employers skip and then regret. Watch the man do the work before you select him — at our centre in New Delhi, or over video with the bench set up and the material ready.</p>
+    <div class="form-wrap" style="margin-top:30px">
+      <div class="field-row">
+        <div class="field">
+          <label for="v-company">Company</label>
+          <input id="v-company" type="text">
+        </div>
+        <div class="field">
+          <label for="v-country">Country of work</label>
+          <input id="v-country" type="text" placeholder="e.g. Qatar">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="v-trade">Trade to be tested</label>
+          <input id="v-trade" type="text" placeholder="e.g. 6G pipe welders">
+        </div>
+        <div class="field">
+          <label for="v-when">Preferred dates</label>
+          <input id="v-when" type="text" placeholder="e.g. second week of November">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="v-email">Your email</label>
+          <input id="v-email" type="email" placeholder="name@company.com">
+        </div>
+        <div class="field">
+          <label for="v-phone">Phone or WhatsApp</label>
+          <input id="v-phone" type="tel" placeholder="with country code">
+        </div>
+      </div>
+      <div class="field">
+        <label for="v-mode">In person or by video?</label>
+        <select id="v-mode"><option>In person at New Delhi</option><option>By video</option><option>Either — advise us</option></select>
+      </div>
+      <div class="field">
+        <label for="v-notes">Your own test criteria, if you have them</label>
+        <textarea id="v-notes" placeholder="Send your WPS, checklist or a photograph of an accepted piece of work and we will test to that standard instead of ours."></textarea>
+      </div>
+      <input type="text" id="v-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0">
+      <div class="form-actions"><button class="btn btn-solid" type="button" id="v-send">Request the test</button></div>
+      <p class="form-error" id="v-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+
+<section class="wash" id="attach">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>Email an existing demand letter</h2>
+    <p>If you already hold a job order, a demand letter, a trade specification or a drawing, email it rather than retyping it into a form. Attachments go to info@tkvk.in and are read by a person, not a parser.</p>
+    <div class="form-actions"><a class="btn btn-solid" href="mailto:info@tkvk.in?subject=Manpower%20requirement%20—%20demand%20letter%20attached&amp;body=Company:%0AContact person:%0ACountry of work:%0ATrade(s) needed:%0ANumber of workers:%0ASalary and hours:%0AAccommodation and food:%0AContract length:%0ANeeded on site by:%0A%0A(Please attach the demand letter, job order or trade specification to this email.)">Open an email with the details filled in</a></div>
+    <p class="form-note">Our form cannot take file attachments — it sends through our own server with nothing stored on this website, and we would rather say that than quietly drop your file.</p>
+    <h3 class="rel-h" id="whatsapp">Send it on WhatsApp</h3>
+    <p>The quickest route of all. This opens a message addressed to us with a short template you can edit — trade, numbers, country and when you need them.</p>
+    <div class="form-actions"><a class="btn btn-wa" href="https://wa.me/918887927104?text=Namaste, this is an employer enquiry from tkvk.in.%0A%0ATrade needed:%0ANumber of workers:%0ACountry of work:%0ANeeded on site by:%0ACompany:" rel="noopener">Open WhatsApp</a></div>
+    <p class="form-note">WhatsApp replies come from +91 88879 27104 during Indian business hours. For anything with documents attached, email is better.</p>
+  </div>
+</section>
+
+
+<section>
   <div class="wrap">
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h2>What happens after you send it</h2>
@@ -337,7 +457,7 @@
       </div>
     </div>
     <div class="foot-base">
-      <span class="last-updated">Last updated: <time datetime="2026-10-03">2026-10-03</time></span>
+      <span class="last-updated">Last updated: <time datetime="2026-10-16">2026-10-16</time></span>
       <span>© <span id="yr">2026</span> TKVK Services — Taj Kaushal Vikas Kendra, New Delhi</span>
       <span><a href="/privacy-policy">Privacy</a> &nbsp; <a href="/cookies-policy">Cookies</a> &nbsp; <a href="/terms-of-service">Terms</a></span>
     </div>
@@ -458,6 +578,43 @@ t.addEventListener('click', function(){
     if (!check()) return;
     window.location.href = 'https://wa.me/918887927104?text=' + encodeURIComponent('Manpower requirement\n\n' + summary());
   });
+})();
+</script>
+<script>
+/* TKVK — the two extra enquiry routes (call back, trade test). Same Lambda as
+   the main form; no third-party form service. */
+(function(){
+  var ENDPOINT = 'https://kqshq7av3fcmcdf7wf7vy6ztji0vesax.lambda-url.ap-south-1.on.aws/';
+  function v(id){ var e=document.getElementById(id); return e? e.value.trim() : ''; }
+  function wire(btnId, errId, honeyId, subject, labels, requireQ){
+    var btn=document.getElementById(btnId); if(!btn) return;
+    var err=document.getElementById(errId);
+    btn.addEventListener('click', async function(){
+      var body=[]; for(var i=0;i<labels.length;i++){ var val=v(labels[i][0]); if(val) body.push(labels[i][1]+': '+val); }
+      if(requireQ && !v(requireQ)){ err.textContent='Please tell us what you would like to ask.'; return; }
+      if(!v(labels[labels.length-1][0]) && !v(labels[labels.length-2][0])){ err.textContent='Please leave an email or a phone number so we can reply.'; return; }
+      err.textContent=''; var label=btn.textContent; btn.disabled=true; btn.textContent='Sending...';
+      try{
+        var res=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+          _honey: v(honeyId), _subject: subject,
+          name: v(labels[0][0])||'Employer', email: v('cb-email')||v('v-email'),
+          phone: v('cb-phone')||v('v-phone'),
+          source:'tkvk.in'+window.location.pathname,
+          message: body.join('\n')+'\n\nSent from: '+window.location.pathname
+        })});
+        var data=await res.json().catch(function(){return {};});
+        if(res.ok && data.ok!==false){
+          var w=btn.closest('.form-wrap');
+          w.innerHTML='<h3>'+'Thank you — that has reached us.'+'</h3><p>'+'We read every message ourselves and you will get a straight answer.'+'</p>';
+        } else { err.textContent='Could not send that just now. Please email info@tkvk.in or call us.'; btn.disabled=false; btn.textContent=label; }
+      }catch(e){ err.textContent='Could not send that just now. Please email info@tkvk.in or call us.'; btn.disabled=false; btn.textContent=label; }
+    });
+  }
+  wire('cb-send','cb-err','cb-honey','TKVK question / call back request',
+       [['cb-name','Name'],['cb-company','Company'],['cb-q','Question'],['cb-phone','Phone'],['cb-email','Email']],'cb-q');
+  wire('v-send','v-err','v-honey','TKVK trade test / visit request',
+       [['v-company','Company'],['v-country','Country'],['v-trade','Trade to test'],['v-mode','Mode'],
+        ['v-when','Preferred dates'],['v-notes','Own test criteria'],['v-phone','Phone'],['v-email','Email']]);
 })();
 </script>
 </body>
