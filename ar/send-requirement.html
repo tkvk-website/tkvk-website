@@ -50,7 +50,7 @@
       "publisher": {
         "@id": "https://tkvk.in/#org"
       },
-      "dateModified": "2026-10-01"
+      "dateModified": "2026-10-16"
     },
     {
       "@type": "EducationalOrganization",
@@ -168,7 +168,24 @@
   </div>
 </section>
 
-<section>
+<section class="wash" id="ways">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>اختاروا طريقة الإرسال</h2>
+    <p>ستّة مسارات، جميعها تصل إلى المكتب نفسه على info@tkvk.in. اختاروا ما يناسب موقفكم — ولستم بحاجة إلى طلب عمل مكتمل للبدء.</p>
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card"><h3><a href="#full">أرسلوا احتياجاً كاملاً</a></h3><p>النموذج الكامل: المهنة والأعداد والراتب والساعات والسكن ومدّة العقد وتاريخ البدء. استخدموه حين تعرفون ما تحتاجونه.</p></div>
+      <div class="card"><h3><a href="#callback">اطرحوا سؤالاً أو اطلبوا اتصالاً</a></h3><p>أربعة حقول. لمن لا يزال يحدّد ما هو الاحتياج، أو يريد التحدّث إلى شخص قبل كتابة أي التزام.</p></div>
+      <div class="card"><h3><a href="#attach">أرسلوا خطاب طلب موجوداً بالبريد</a></h3><p>لديكم أمر عمل أو خطاب طلب أو مواصفة مهنية؟ أرسلوه كمرفق وسنقرأه ونردّ على التفاصيل.</p></div>
+      <div class="card"><h3><a href="#whatsapp">أرسلوه عبر واتساب</a></h3><p>أسرع مسار. يفتح رسالة موجَّهة إلينا — اكتبوا المهنة والأعداد والدولة وأرسلوا.</p></div>
+      <div class="card"><h3><a href="#visit">احجزوا اختباراً مهنياً أو زيارة</a></h3><p>شاهدوا المرشّحين يعملون قبل اختيارهم، حضورياً في مركزنا بنيودلهي أو عبر الفيديو. أخبرونا بالمهنة ونجهّز طاولة العمل.</p></div>
+      <div class="card"><h3><a href="tel:+918887927104">اتّصلوا بنا</a></h3><p>‎+91 88879 27104. إن كنتم تفضّلون الحديث أولاً فاتّصلوا وسنضع التفاصيل كتابةً بعدها.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="full">
   <div class="wrap">
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h2>طلب العمالة الخاص بكم</h2>
@@ -268,7 +285,110 @@
   </div>
 </section>
 
-<section class="wash">
+<section class="wash" id="callback">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>اطرحوا سؤالاً أو اطلبوا اتصالاً</h2>
+    <p>لا حاجة إلى أمر عمل. أخبرونا بما تحاولون تحديده وسنجيب عنه — بما في ذلك حين تكون الإجابة أننا لا نستطيع المساعدة.</p>
+    <div class="form-wrap" style="margin-top:30px">
+      <div class="field-row">
+        <div class="field">
+          <label for="cb-name">اسمكم</label>
+          <input id="cb-name" type="text">
+        </div>
+        <div class="field">
+          <label for="cb-company">الشركة</label>
+          <input id="cb-company" type="text">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="cb-phone">الهاتف أو واتساب</label>
+          <input id="cb-phone" type="tel" placeholder="مع رمز الدولة">
+        </div>
+        <div class="field">
+          <label for="cb-email">بريدكم الإلكتروني</label>
+          <input id="cb-email" type="email" placeholder="name@company.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="cb-q">ما الذي تودّون سؤاله؟</label>
+        <textarea id="cb-q" placeholder="مثال: قد نحتاج 20 كهربائياً للدمام في مارس لكن التأشيرات لم تصدر بعد — من أين نبدأ؟"></textarea>
+      </div>
+      <input type="text" id="cb-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0">
+      <div class="form-actions"><button class="btn btn-solid" type="button" id="cb-send">أرسلوا السؤال</button></div>
+      <p class="form-error" id="cb-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>احجزوا اختباراً مهنياً أو زيارة</h2>
+    <p>هذا هو الجزء الذي يتخطّاه معظم أصحاب العمل ثم يندمون. شاهدوا العامل وهو يؤدّي العمل قبل اختياره — في مركزنا بنيودلهي أو عبر الفيديو مع تجهيز طاولة العمل والمواد.</p>
+    <div class="form-wrap" style="margin-top:30px">
+      <div class="field-row">
+        <div class="field">
+          <label for="v-company">الشركة</label>
+          <input id="v-company" type="text">
+        </div>
+        <div class="field">
+          <label for="v-country">دولة العمل</label>
+          <input id="v-country" type="text" placeholder="مثال: قطر">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="v-trade">المهنة المراد اختبارها</label>
+          <input id="v-trade" type="text" placeholder="مثال: لحّامو أنابيب 6G">
+        </div>
+        <div class="field">
+          <label for="v-when">التواريخ المفضّلة</label>
+          <input id="v-when" type="text" placeholder="مثال: الأسبوع الثاني من نوفمبر">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="v-email">بريدكم الإلكتروني</label>
+          <input id="v-email" type="email" placeholder="name@company.com">
+        </div>
+        <div class="field">
+          <label for="v-phone">الهاتف أو واتساب</label>
+          <input id="v-phone" type="tel" placeholder="مع رمز الدولة">
+        </div>
+      </div>
+      <div class="field">
+        <label for="v-mode">حضورياً أم عبر الفيديو؟</label>
+        <select id="v-mode"><option>حضورياً في نيودلهي</option><option>عبر الفيديو</option><option>أيّهما — انصحونا</option></select>
+      </div>
+      <div class="field">
+        <label for="v-notes">معايير الاختبار الخاصة بكم، إن وُجدت</label>
+        <textarea id="v-notes" placeholder="أرسلوا مواصفة إجراء اللحام أو قائمة الفحص أو صورة لعمل مقبول وسنختبر على ذلك المعيار بدل معيارنا."></textarea>
+      </div>
+      <input type="text" id="v-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0">
+      <div class="form-actions"><button class="btn btn-solid" type="button" id="v-send">اطلبوا الاختبار</button></div>
+      <p class="form-error" id="v-err" role="alert"></p>
+    </div>
+  </div>
+</section>
+
+<section class="wash" id="attach">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
+    <h2>أرسلوا خطاب طلب موجوداً بالبريد</h2>
+    <p>إن كان لديكم أمر عمل أو خطاب طلب أو مواصفة مهنية أو مخطّط، أرسلوه بالبريد بدل إعادة كتابته في نموذج. تصل المرفقات إلى info@tkvk.in ويقرأها إنسان لا برنامج.</p>
+    <div class="form-actions"><a class="btn btn-solid" href="mailto:info@tkvk.in?subject=احتياج%20عمالة%20—%20خطاب%20الطلب%20مرفق&amp;body=%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%3A%0A%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%3A%0A%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%3A%0A%D8%A7%D9%84%D9%85%D9%87%D9%86%D8%A9%3A%0A%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%3A%0A%D8%A7%D9%84%D8%B1%D8%A7%D8%AA%D8%A8%20%D9%88%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA%3A%0A%D8%A7%D9%84%D8%B3%D9%83%D9%86%20%D9%88%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85%3A%0A%D9%85%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%AF%3A%0A%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%20%D8%A7%D9%84%D8%AD%D8%A7%D8%AC%D8%A9%3A">افتحوا بريداً بالتفاصيل جاهزة</a></div>
+    <p class="form-note">نموذجنا لا يستقبل مرفقات — فهو يرسل عبر خادمنا الخاص دون تخزين أي شيء على هذا الموقع، ونفضّل قول ذلك على إسقاط ملفكم بصمت.</p>
+    <h3 class="rel-h" id="whatsapp">أرسلوه عبر واتساب</h3>
+    <p>أسرع المسارات. يفتح رسالة موجَّهة إلينا بقالب قصير يمكنكم تعديله — المهنة والأعداد والدولة وموعد الحاجة.</p>
+    <div class="form-actions"><a class="btn btn-wa" href="https://wa.me/918887927104?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D9%87%D8%B0%D8%A7%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B5%D8%A7%D8%AD%D8%A8%20%D8%B9%D9%85%D9%84%20%D9%85%D9%86%20tkvk.in" rel="noopener">افتحوا واتساب</a></div>
+    <p class="form-note">ردود واتساب تأتي من ‎+91 88879 27104 خلال ساعات العمل الهندية. ولأي شيء يحتاج مرفقات، البريد الإلكتروني أفضل.</p>
+  </div>
+</section>
+
+
+<section>
   <div class="wrap">
     <div class="orn" aria-hidden="true"><svg viewBox="0 0 32 22"><path d="M16 1c2.6 3.7 2.6 8.4 0 12.6C13.4 9.4 13.4 4.7 16 1z"/><path d="M15.4 14.6C11.6 12.7 8 8.9 7 4.2c4.7 1 8 4.7 8.4 10.4z"/><path d="M16.6 14.6C17 8.9 20.3 5.2 25 4.2c-1 4.7-4.6 8.5-8.4 10.4z"/></svg><i></i></div>
     <h2>ماذا يحدث بعد إرسالكم الطلب</h2>
@@ -355,7 +475,7 @@
       </div>
     </div>
     <div class="foot-base">
-      <span class="last-updated">آخر تحديث: <time datetime="2026-10-01">2026-10-01</time></span>
+      <span class="last-updated">آخر تحديث: <time datetime="2026-10-16">2026-10-16</time></span>
       <span>© <span id="yr">2026</span> TKVK — تاج كوشال فيكاس كيندرا، نيودلهي</span>
       <span><a href="/ar/privacy-policy">سياسة الخصوصية</a> &nbsp; <a href="/ar/cookies-policy">ملفات الارتباط</a> &nbsp; <a href="/ar/terms-of-service">شروط الاستخدام</a></span>
     </div>
@@ -456,6 +576,43 @@ t.addEventListener('click', function(){
     if (!check()) return;
     window.location.href = 'https://wa.me/918887927104?text=' + encodeURIComponent('Manpower requirement\n\n' + summary());
   });
+})();
+</script>
+<script>
+/* TKVK — the two extra enquiry routes (call back, trade test). Same Lambda as
+   the main form; no third-party form service. */
+(function(){
+  var ENDPOINT = 'https://kqshq7av3fcmcdf7wf7vy6ztji0vesax.lambda-url.ap-south-1.on.aws/';
+  function v(id){ var e=document.getElementById(id); return e? e.value.trim() : ''; }
+  function wire(btnId, errId, honeyId, subject, labels, requireQ){
+    var btn=document.getElementById(btnId); if(!btn) return;
+    var err=document.getElementById(errId);
+    btn.addEventListener('click', async function(){
+      var body=[]; for(var i=0;i<labels.length;i++){ var val=v(labels[i][0]); if(val) body.push(labels[i][1]+': '+val); }
+      if(requireQ && !v(requireQ)){ err.textContent='يرجى إخبارنا بما تودّون سؤاله.'; return; }
+      if(!v(labels[labels.length-1][0]) && !v(labels[labels.length-2][0])){ err.textContent='يرجى ترك بريد إلكتروني أو رقم هاتف حتى نردّ عليكم.'; return; }
+      err.textContent=''; var label=btn.textContent; btn.disabled=true; btn.textContent='جارٍ الإرسال...';
+      try{
+        var res=await fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+          _honey: v(honeyId), _subject: subject,
+          name: v(labels[0][0])||'Employer', email: v('cb-email')||v('v-email'),
+          phone: v('cb-phone')||v('v-phone'),
+          source:'tkvk.in'+window.location.pathname,
+          message: body.join('\n')+'\n\nSent from: '+window.location.pathname
+        })});
+        var data=await res.json().catch(function(){return {};});
+        if(res.ok && data.ok!==false){
+          var w=btn.closest('.form-wrap');
+          w.innerHTML='<h3>'+'شكراً لكم — وصلتنا رسالتكم.'+'</h3><p>'+'نقرأ كل رسالة بأنفسنا وستصلكم إجابة صريحة.'+'</p>';
+        } else { err.textContent='تعذّر الإرسال الآن. يرجى المراسلة على info@tkvk.in أو الاتصال بنا.'; btn.disabled=false; btn.textContent=label; }
+      }catch(e){ err.textContent='تعذّر الإرسال الآن. يرجى المراسلة على info@tkvk.in أو الاتصال بنا.'; btn.disabled=false; btn.textContent=label; }
+    });
+  }
+  wire('cb-send','cb-err','cb-honey','TKVK question / call back request',
+       [['cb-name','Name'],['cb-company','Company'],['cb-q','Question'],['cb-phone','Phone'],['cb-email','Email']],'cb-q');
+  wire('v-send','v-err','v-honey','TKVK trade test / visit request',
+       [['v-company','Company'],['v-country','Country'],['v-trade','Trade to test'],['v-mode','Mode'],
+        ['v-when','Preferred dates'],['v-notes','Own test criteria'],['v-phone','Phone'],['v-email','Email']]);
 })();
 </script>
 </body>
