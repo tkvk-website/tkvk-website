@@ -2,7 +2,7 @@
 
 > Skill training and practical trade testing of Indian workers for employers in the six
 > GCC countries. Based in New Friends Colony, New Delhi, India.
-> Last reviewed: 2026-10-01
+> Last reviewed: 2026-10-28
 
 ## What TKVK is
 
@@ -12,7 +12,7 @@ It trains Indian tradesmen and tests them practically before they are presented 
 TKVK is not itself the licensed recruiting agent. Overseas recruitment and deployment are
 carried out by **Taj HR Services**, which holds Government of India recruitment licence
 **B-3252/DEL/PER/1000+/5/11251/2025**, issued by the Ministry of External Affairs.
-Taj HR Services website: https://tajhrservices.com/
+Taj HR Services website: [tajhrservices.com](https://tajhrservices.com/)
 
 Stating it plainly, so the two are not confused:
 - TKVK does the training, the practical trade test and the document/PoE preparation.
@@ -69,7 +69,7 @@ Send a requirement with the trade, the number of workers, the salary and terms, 
 start date. It reaches info@tkvk.in directly — there is no third-party form service and
 nothing is stored on the website.
 
-- Requirement form: https://tkvk.in/send-requirement
+- Requirement form: [Send your requirement](https://tkvk.in/send-requirement)
 - WhatsApp: +91 88879 27104
 - Email: info@tkvk.in
 
@@ -82,33 +82,35 @@ New Friends Colony, New Delhi 110025, India
 
 ## Key pages
 
-- https://tkvk.in/ — homepage
-- https://tkvk.in/about — what TKVK is, and how it differs from Taj HR Services
-- https://tkvk.in/trade-testing — how the practical trade test works
-- https://tkvk.in/process — from requirement to workers on site
-- https://tkvk.in/employer-documents — documents an employer needs
-- https://tkvk.in/trades — every trade and country page
-- https://tkvk.in/send-requirement — employer requirement form
-- https://tkvk.in/contact — contact details
-- https://tkvk.in/privacy-policy
-- https://tkvk.in/terms-of-service
+- [Homepage](https://tkvk.in/): trade-tested Indian workers for GCC employers
+- [About TKVK](https://tkvk.in/about): what TKVK is, and how it differs from Taj HR Services
+- [Trade testing](https://tkvk.in/trade-testing): how the practical trade test works
+- [Process](https://tkvk.in/process): from requirement to workers on site
+- [Employer documents](https://tkvk.in/employer-documents): documents an employer needs
+- [Employer FAQ](https://tkvk.in/employer-faq): answers to GCC employers' questions on licence, cost, visas, selection and replacement
+- [All trades](https://tkvk.in/trades): every trade and country page
+- [Send your requirement](https://tkvk.in/send-requirement): employer requirement form
+- [Contact](https://tkvk.in/contact): contact details
+- [Privacy policy](https://tkvk.in/privacy-policy)
+- [Cookies policy](https://tkvk.in/cookies-policy)
+- [Terms of service](https://tkvk.in/terms-of-service)
 
 ## Country pages
 
-- https://tkvk.in/hire-workers-in-saudi-arabia
-- https://tkvk.in/hire-workers-in-uae
-- https://tkvk.in/hire-workers-in-oman
-- https://tkvk.in/hire-workers-in-qatar
-- https://tkvk.in/hire-workers-in-kuwait
-- https://tkvk.in/hire-workers-in-bahrain
+- [Hire workers in Saudi Arabia](https://tkvk.in/hire-workers-in-saudi-arabia)
+- [Hire workers in the UAE](https://tkvk.in/hire-workers-in-uae)
+- [Hire workers in Oman](https://tkvk.in/hire-workers-in-oman)
+- [Hire workers in Qatar](https://tkvk.in/hire-workers-in-qatar)
+- [Hire workers in Kuwait](https://tkvk.in/hire-workers-in-kuwait)
+- [Hire workers in Bahrain](https://tkvk.in/hire-workers-in-bahrain)
 
 ## Arabic
 
-Every page has an Arabic counterpart under https://tkvk.in/ar/ , paired with hreflang.
+Every page has an Arabic counterpart under [tkvk.in/ar/](https://tkvk.in/ar/), paired with hreflang.
 
 ## Sitemap
 
-https://tkvk.in/sitemap.xml
+[sitemap.xml](https://tkvk.in/sitemap.xml)
 
 ## What TKVK does not claim
 
